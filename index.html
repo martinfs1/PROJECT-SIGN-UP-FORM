@@ -5,52 +5,71 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/styles-dist.css">
 	<title>SIGN-UP-FORM</title>
 </head>
 
 <body>
 	<div class="container">
 		<div class="left-side">
-			<img class="bg-image" src="./Assets/bg-Image.jpg" alt="bg-Image">
 			<div class="logo">
 				<img class="img-logo" src="./Assets/odin-lined.png" alt="logo">
 				<span>ODIN</span>
-			</div>			
+			</div>
 		</div>
 
 		<div class="right-side">
-					
-			<p>This is not a real online service! You know you need something like this in your life to help you realize your
-				deepest dreams.</p>
-			<p>You <i>know</i> you want to.</p>
+			<div class="texts">
+				<p>This is not a real online service! You know you need something like this in your life to help you
+					realize your deepest dreams.<br>
+					Sign up <i>now</i> to get started.</p>
+				<p>You <i>know</i> you want to.</p>
+			</div>
 			<form action="#" method="post">
-				<h1>Let's do this!</h1>
-				<div>
-					<label for="firtsName">FIRST NAME</label>
-					<input type="text" name="firstName" id="firstName">
-					<label for="lastName">LAST NAME</label>
-					<input type="text" name="lastName" id="lastName">
+				<legend>Let's do this!</legend>
+				<fieldset class="inputGroup">
+
+					<div class="inputLabel">
+						<label for="firtsName">FIRST NAME</label>
+						<input type="text" name="firstName" id="firstName">
+					</div>
+
+					<div class="inputLabel">
+						<label for="lastName">LAST NAME</label>
+						<input type="text" name="lastName" id="lastName">
+					</div>
+
+					<div class="inputLabel">
+						<label for="email">EMAIL</label>
+						<input type="email" name="email" id="email">
+					</div>
+
+					<div class="inputLabel">
+						<label for="phoneNumber">PHONE NUMBER</label>
+						<input type="number" name="phoneNumber" id="phoneNumber">
+					</div>
+
+					<div class="inputLabel ">
+						<label for="pass">PASSWORD</label>
+						<input class="error" type="password" name="pass" id="pass" required>
+					</div>
+
+					<div class="inputLabel ">
+						<label for="cPass">CONFIRM PASSWORD</label>
+						<input class="error" type="password" name="cPass" id="cPass" required>
+					</div>
+
+				</fieldset>
+
+				<div class="lastPart">
+					<button type="submit">Create Account</button>
+					<p>Already have an account? <a>Log in</a></p>
 				</div>
 
-				<div>
-					<label for="email">EMAIL</label>
-					<input type="email" name="email" id="email">
-					<label for="phoneNumber">PHONE NUMBER</label>
-					<input type="number" name="phoneNumber" id="phoneNumber">
-				</div>
-				<div>
-					<label for="pass">PASSWORD</label>
-					<input type="password" name="pass" id="pass">
-					<label for="cPass">CONFIRM PASSWORD</label>
-					<input type="password" name="cPass" id="cPass">
-				</div>
 			</form>
-
-			<button type="submit">Create Account</button>
-			<p>Already have an account? <a>Log in</a></p>
 		</div>
-			
+
 	</div>
 
 </body>
