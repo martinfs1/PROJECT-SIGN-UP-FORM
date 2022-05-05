@@ -5,15 +5,15 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/normalize.css">
-	<link rel="stylesheet" href="./css/styles-dist.css">
+	<link rel="stylesheet" href="./css/normalize.css">	
+	<link rel="stylesheet" href="./css/styles.css">
 	<title>SIGN-UP-FORM</title>
 </head>
 
 <body>
-	<div class="container">
-		<div class="left-side">
-			<div class="logo">
+	<div class="container dFlex">
+		<div class="left-side dFlex">
+			<div class="logo dFlex">
 				<img class="img-logo" src="./Assets/odin-lined.png" alt="logo">
 				<span>ODIN</span>
 			</div>
@@ -21,57 +21,46 @@
 
 		<div class="right-side">
 			<div class="texts">
-				<p>This is not a real online service! You know you need something like this in your life to help you
+				<p>This is not a real online service! You know you need something <br> like this in your life to help you
 					realize your deepest dreams.<br>
 					Sign up <i>now</i> to get started.</p>
 				<p>You <i>know</i> you want to.</p>
 			</div>
 			<form action="#" method="post">
 				<legend>Let's do this!</legend>
-				<fieldset class="inputGroup">
-
-					<div class="inputLabel">
+				<fieldset class="inputGroup dFlex">
+					<div class="inputLabel dFlex">
 						<label for="firtsName">FIRST NAME</label>
-						<input type="text" name="firstName" id="firstName">
+						<input type="text" name="firstName" id="firstName" required>
 					</div>
-
-					<div class="inputLabel">
+					<div class="inputLabel dFlex">
 						<label for="lastName">LAST NAME</label>
-						<input type="text" name="lastName" id="lastName">
+						<input type="text" name="lastName" id="lastName" required>
 					</div>
-
-					<div class="inputLabel">
+					<div class="inputLabel dFlex">
 						<label for="email">EMAIL</label>
-						<input type="email" name="email" id="email">
+						<input type="email" name="email" id="email" required>
 					</div>
-
-					<div class="inputLabel">
+					<div class="inputLabel dFlex">
 						<label for="phoneNumber">PHONE NUMBER</label>
-						<input type="number" name="phoneNumber" id="phoneNumber">
+						<input type="number" name="phoneNumber" id="phoneNumber" required>
 					</div>
-
-					<div class="inputLabel ">
+					<div class="inputLabel dFlex">
 						<label for="pass">PASSWORD</label>
 						<input class="error" type="password" name="pass" id="pass" required>
 					</div>
-
-					<div class="inputLabel ">
+					<div class="inputLabel dFlex">
 						<label for="cPass">CONFIRM PASSWORD</label>
 						<input class="error" type="password" name="cPass" id="cPass" required>
 					</div>
-
 				</fieldset>
-
 				<div class="lastPart">
 					<button type="submit">Create Account</button>
 					<p>Already have an account? <a>Log in</a></p>
 				</div>
-
 			</form>
 		</div>
-
 	</div>
-
 </body>
 
 </html>
