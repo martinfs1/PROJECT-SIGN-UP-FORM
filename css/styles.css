@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Norse';
-    src: url(/Assets/Norse-Bold.otf);
+    src: url(../Assets/Norse-Bold.otf);
 }
 
 * {
